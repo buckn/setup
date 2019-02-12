@@ -1,38 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-sudo add-apt-repository ppa:ppsspp/stable
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-add-repository 'deb http://debian.drdteam.org/ stable multiverse'
-sudo add-apt-repository multiverse
+sudo su -
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get autoremove
+add-apt-repository ppa:ppsspp/stable
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" > /etc/apt/sources.list.d/sublime-text.list
+apt-add-repository 'deb http://debian.drdteam.org/ stable multiverse'
+add-apt-repository multiverse
+
+apt-get update
+apt-get upgrade
 
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-sudo dpkg -i ./discord.deb
+dpkg -i ./discord.deb
 
-sudo apt-get install -fy openbox
-sudo apt-get install -fy lightdm
-sudo apt-get install -fy lxde
-sudo apt-get install -fy nnn 
-sudo apt-get install -fy firefox
-sudo apt-get install -fy cmus
-sudo apt-get install -fy nestopia 
-sudo apt-get install -fy ppsspp 
-sudo apt-get install -fy sublime-text 
-sudo apt-get install -fy gzdoom 
-sudo apt-get install -fy gimp 
-sudo apt-get install -fy steam-installer 
-sudo apt-get install -fy mpv 
-sudo apt-get install -fy gpick 
-sudo apt-get install -fy nethack
+apt-get install -y openbox lightdm lxde nnn  firefox cmus nestopia  ppsspp  sublime-text  gzdoom  gimp  steam-installer  mpv gpick nethack
 
-sudo apt-get purge chromium*
+apt-get purge chromium*
 
-sudo apt-get upgrade
-sudo apt-get autoremove
+apt-get autoremove
 
 echo -e "@pcmanfm --desktop --profile LXDE\n@conky" > ~/.config/lxsession/LXDE/autostart
 cp ./lxde-rc.xml ~/.config/openbox/
