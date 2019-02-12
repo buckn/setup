@@ -13,7 +13,22 @@ sudo apt-get autoremove
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo dpkg -i ./discord.deb
 
-sudo apt-get install -fy openbox lightdm lxqt nnn firefox cmus conky-all nestopia ppsspp sublime-text gzdoom gimp steam-installer mpv gpick nethack
+sudo apt-get install -fy openbox 
+sudo apt-get install -fy lightdm 
+sudo apt-get install -fy lxqt 
+sudo apt-get install -fy nnn 
+sudo apt-get install -fy firefox 
+sudo apt-get install -fy cmus 
+sudo apt-get install -fy conky-all 
+sudo apt-get install -fy nestopia 
+sudo apt-get install -fy ppsspp 
+sudo apt-get install -fy sublime-text 
+sudo apt-get install -fy gzdoom 
+sudo apt-get install -fy gimp 
+sudo apt-get install -fy steam-installer 
+sudo apt-get install -fy mpv 
+sudo apt-get install -fy gpick 
+sudo apt-get install -fy nethack
 
 sudo apt-get purge chromium*
 
@@ -21,7 +36,7 @@ sudo apt-get upgrade
 sudo apt-get autoremove
 
 echo -e "@pcmanfm --desktop --profile LXDE\n@conky" > ~/.config/lxsession/LXDE/autostart
-cp ./lxe-rc.xml ~/.config/openbox/
+cp ./lxde-rc.xml ~/.config/openbox/
 cp ./conkyrc ~/.conkyrc
 
 sudo reboot
