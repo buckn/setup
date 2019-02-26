@@ -1,5 +1,7 @@
 #!/usr/bin/env bash	
 
+mkdir -p ~/bin/{gitapps,c,python,node}
+
 dpkg --add-architecture -y i386
 add-apt-repository -y ppa:agornostal/ulauncher
 add-apt-repository -y ppa:ppsspp/stable
@@ -13,7 +15,11 @@ apt-get -y upgrade
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 dpkg -i ./discord.deb
 sudo apt-get install -fy
+git clone https://github.com/dpayne/cli-visualizer.git ~/bin/gitapps/
+~/bin/gitapps/cli-visualizer/install.sh
+git clone https://github.com/cmus/cmus.git ~/bin/gitapps/
+cd ~/bin/gitapps/cmus
+make
+make install
 
-apt-get install -y lightdm lxde nnn firefox cmus nestopia ppsspp sublime-text gimp steam-installer mpv gpick nethack-console ulauncher screenfetch
-
-reboot
+apt-get install -y lightdm lxde nnn firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console ulauncher screenfetch libfftw3-dev libncursesw5-dev cmake
