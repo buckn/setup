@@ -1,7 +1,7 @@
 #!/usr/bin/env bash	
 
-cp ./autostart ~/lxsession/LXDE/autostart
-cp ./lxde-rc.xml ~/.config/openbox/
-cp ./settings.json ~/.config/ulauncher/
-cp ./conkyrc ~/.conkyrc
+cp ./configFiles/autostart ~/lxsession/LXDE/autostart
+cp ./configFiles/lxde-rc.xml ~/.config/openbox/
+cp ./configFiles/settings.json ~/.config/ulauncher/
+cp ./configFiles/conkyrc ~/.conkyrc
 rm -rf ~/autostart/*
