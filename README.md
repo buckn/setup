@@ -15,3 +15,7 @@ Reboot
 Run the configuration script
 
 	./configure
+
+Reboot again to apply all of the settings in the configuration files
+
+	reboot
