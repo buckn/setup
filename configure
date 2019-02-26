@@ -4,4 +4,4 @@ cp ./configFiles/autostart ~/lxsession/LXDE/autostart
 cp ./configFiles/lxde-rc.xml ~/.config/openbox/
 cp ./configFiles/settings.json ~/.config/ulauncher/
 cp ./configFiles/conkyrc ~/.conkyrc
-rm -rf ~/autostart/*
+rm -rf ~/.config/autostart/*
