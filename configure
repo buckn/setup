@@ -1,7 +1,7 @@
 #!/usr/bin/env bash	
 
-cp ./configFiles/autostart ~/lxsession/LXDE/autostart
+cp ./configFiles/autostart ~/.config/lxsession/LXDE/autostart
 cp ./configFiles/lxde-rc.xml ~/.config/openbox/
-cp ./configFiles/settings.json ~/.config/ulauncher/
 cp ./configFiles/conkyrc ~/.conkyrc
+cp ./configFiles/settings.ini ~/.config/gtk-3.0/settings.ini
 rm -rf ~/.config/autostart/*

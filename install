@@ -5,6 +5,7 @@ mkdir -p ~/bin/{gitapps,c,python,node}
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 
 dpkg --add-architecture i386
+sudo add-apt-repository ppa:noobslab/themes
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 add-apt-repository -y ppa:ppsspp/stable
@@ -20,12 +21,12 @@ apt-get -y update
 apt-get -y upgrade
 
 sudo apt-get install -fy
-git clone https://github.com/cmus/cmus.git ~/bin/gitapps/
-cd ~/bin/gitapps/cmus
-make
-make install
+git clone https://github.com/cmus/cmus.git ~/bin/gitapps/cmus
+( cd ~/bin/gitapps/cmus && make && make install )
+git clone https://github.com/erikdubois/Super-Ultra-Flat-Numix-Remix.git ~/bin/gitapps/Super-Ultra-Flat-Numix-Remix
+mv ~/bin/gitapps/Super-Ultra-Flat-Numix-Remix/surfn-icons/* ~/.icons
 
-apt-get install -y lightdm lxde nnn albert firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console screenfetch libfftw3-dev libncursesw5-dev cmake docker-ce docker-ce-cli containerd.io
+apt-get install -y lightdm lxde nnn albert arc-theme firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console screenfetch libfftw3-dev libncursesw5-dev cmake docker-ce docker-ce-cli containerd.io
 
 dpkg -i ./discord.deb
 sudo apt-get install -fy
