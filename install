@@ -1,6 +1,6 @@
 #!/usr/bin/env bash	
 
-mkdir -p ~/bin/{gitapps,c,python,node}
+mkdir -p ~/bin/{gitapps,c,python,node} ~/.icons
 
 apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 
