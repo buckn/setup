@@ -1,4 +1,0 @@
-pcmanfm --desktop --profile LXDE
-albert -k ctrl+shift+space
-conky -d
-xset m 0 0
