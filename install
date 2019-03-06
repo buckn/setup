@@ -25,7 +25,7 @@ git clone https://github.com/cmus/cmus.git ~/bin/gitapps/cmus
 git clone https://github.com/erikdubois/Super-Ultra-Flat-Numix-Remix.git ~/bin/gitapps/Super-Ultra-Flat-Numix-Remix
 mv ~/bin/gitapps/Super-Ultra-Flat-Numix-Remix/surfn-icons/* ~/.icons
 
-apt-get install -y lightdm lxde nnn albert arc-theme firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console screenfetch libfftw3-dev libncursesw5-dev cmake docker-ce docker-ce-cli containerd.io
+apt-get install -y lightdm lxde nnn albert conky arc-theme firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console screenfetch libfftw3-dev libncursesw5-dev cmake docker-ce docker-ce-cli containerd.io
 
 dpkg -i ./discord.deb
 apt-get install -fy
