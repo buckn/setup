@@ -1,21 +1,13 @@
 # Setup
 
-This is a setup script that automatically installs lxde, and a bunch of other desktop I use on a daily basis. Do not run without reading over the script.
+This is a setup script that automatically installs a desktop, and a bunch of other desktop I use on a daily basis.
 
 ## How to use
 
 Run the install install script
 
-	./install
+	sudo ./install
 
-Reboot
+Run the configuration script to configure docker
 
-	reboot
-
-Run the configuration script
-
-	./configure
-
-Reboot again to apply all of the settings in the configuration files
-
-	reboot
+	sudo ./configure
