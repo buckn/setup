@@ -1,6 +1,6 @@
 #!/usr/bin/env bash	
 
-mkdir -p ~/bin/{gitapps,c,py,js,rust,go,web}
+mkdir -p ~/bin/{gitapps,c,py,js,rust,go,web,bash,java,godot}
 
 #add stuff required to install some apps
 apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -28,7 +28,7 @@ dpkg -i ./discord.deb
 curl https://sh.rustup.rs -sSf | sh
 
 #install a bunch of applications
-apt-get install -y kde-plasma-desktop nnn albert conky firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console screenfetch libfftw3-dev libncursesw5-dev cmake docker-ce docker-ce-cli containerd.io
+apt-get install -y lxde nnn albert conky firefox mednafen ppsspp sublime-text gimp steam mpv gpick nethack-console neofetch libfftw3-dev libncursesw5-dev cmake docker-ce docker-ce-cli containerd.io
 
 apt-get install -fy
 apt-get -y update

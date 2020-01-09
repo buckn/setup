@@ -1,13 +1,13 @@
 #!/usr/bin/env bash	
 
-#mkdir ~/.config/gtk-3.0 ~/Wallpapers
+mkdir -p ~/.config/gtk-3.0 ~/Wallpapers
 
-#cp ./configFiles/autostart ~/.config/lxsession/LXDE/autostart
-#cp ./configFiles/lxde-rc.xml ~/.config/openbox/
-#cp ./configFiles/conkyrc ~/.conkyrc
-#cp ./configFiles/settings.ini ~/.config/gtk-3.0/settings.ini
-#rm -rf ~/.config/autostart/*
-#rm -rf ~/Public ~/Templates ~/Pictures
+cp ./configFiles/autostart ~/.config/lxsession/LXDE/autostart
+cp ./configFiles/lxde-rc.xml ~/.config/openbox/
+cp ./configFiles/conkyrc ~/.conkyrc
+cp ./configFiles/settings.ini ~/.config/gtk-3.0/settings.ini
+rm -rf ~/.config/autostart/*
+rm -rf ~/Public ~/Templates ~/Pictures
 
 sudo groupadd docker
 sudo usermod -aG docker `ls /home/`
